@@ -1,12 +1,11 @@
 // Computer will pick one of those value in the answer variable. 
 let answer = ["rock", "paper", "scissors"];
-
 let getComputerChoice = answer[Math.floor(Math.random() * answer.length)];
+let getPlayerChoice = prompt("What do you pick?");
 
 // We will find the winner and the looser with this playRound function.
 function playRound(playerSelection, computerSelection) {
 
-    //let playerSelection = prompt("What do you pick?");
     // Rock wins against Scissors.
     // Scissors wins against Paper.
     // Paper wins against Rock.
@@ -31,35 +30,4 @@ function playRound(playerSelection, computerSelection) {
     }
 
 }
-
-
-/*console.log(playRound(getComputerChoice,getComputerChoice));
-
-
-playRound("",getComputerChoice);
-
-
-
-function game(){
-
-for (let playRound = 0; playRound<5; playRound++)
-
-console.log(playRound)
-
-
-} 
-
-
-
-
-function game(){
-for(let i=0; i<155; i++){
-
-
- console.log(playRound("rock", getComputerChoice));
-
-}
-
-}
-
-game();  */
+console.log(playRound(getPlayerChoice, getComputerChoice));
